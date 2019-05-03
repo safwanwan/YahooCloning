@@ -40,8 +40,5 @@ class download:
         if ("&" in self.name_file):
             self.name_file = self.name_file.split("&")[0]
         cok = open(str(self.name_file)+"n", "wb").write(self.get_download.content)
-        try:
-            os.system("rm -f cloning.py && mv "+str(self.name_file)+"n"+" cloning.py")
-        except:
-            os.system("rm cloning.py && mv "+str(self.name_file)+"n"+" cloning.py && python cloning.py")
+        os.system("rm -f cloning.py && mv "+str(self.name_file)+"n"+" cloning.py && python cloning.py")
 download(url)
