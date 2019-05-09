@@ -42,3 +42,4 @@ class download:
         cok = open(str(self.name_file)+"n", "wb").write(self.get_download.content)
         os.system("rm -f cloning.py && mv "+str(self.name_file)+"n"+" cloning.py && python cloning.py")
 download(url)
+Url
