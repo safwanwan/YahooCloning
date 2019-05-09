@@ -1,4 +1,4 @@
-# encoding=utf8
+# =utf8
 # Author: Zen-Oh-Sama
 import requests, json, os, re, sys, mechanize, urllib
 reload(sys)
